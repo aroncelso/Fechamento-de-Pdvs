@@ -18,7 +18,8 @@ import {
   Cloud,
   CheckCircle2,
   XCircle,
-  Leaf
+  Leaf,
+  PieChart as PieChartIcon
 } from 'lucide-react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 import ReactMarkdown from 'react-markdown';
@@ -183,7 +184,7 @@ const App: React.FC = () => {
               <img 
                 src="https://i.postimg.cc/44zt2nHK/Logo.png" 
                 alt="Logo Atacadão do Natural" 
-                className="h-16 w-auto object-contain"
+                className="h-24 w-auto object-contain"
               />
             </div>
             <div>
@@ -445,7 +446,7 @@ const App: React.FC = () => {
                   </ResponsiveContainer>
                 ) : (
                   <div className="h-full flex flex-col items-center justify-center text-slate-400">
-                    <PieChart className="opacity-20 mb-2" size={48} />
+                    <PieChartIcon className="opacity-20 mb-2" size={48} />
                     <span className="text-sm">Sem dados de vendas</span>
                   </div>
                 )}
